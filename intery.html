@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Code Page</title>
+    <link rel="stylesheet" href="intery.css">
+</head>
+<body>
+    <!-- this for the alert box -->
+    <div class="confirm-box">
+        <div class="message">Are you sure you want to change the language?</div>
+        <div class="buttons">
+            <button id="confirm-yes">Yes</button>
+            <button id="confirm-no">No</button>
+        </div>
+    </div>
+    <!-- the end -->
+    <!-- here's an upgrade -->
+  <div class="upgrade_dark_lang">
+    <a onclick="darkMode()"><img class="dark_mode" src="myFnont_Img/dark_mode.svg" alt="dark mode swithc" height="60px" width="60px"></a>
+    <div class="dropdown">
+      <button class="dropbtn">Language 🌐</button>
+      <div class="dropdown-content">
+        <button onclick="handleLanguageSwitch('english')">English</button>
+        <button onclick="handleLanguageSwitch('german')">German</button>
+        <button onclick="handleLanguageSwitch('arabic')">عربي</button>
+      </div>
+    </div>
+  </div>
+    <!-- upgrade end -->
+    <div class="logo">Logo</div>
+    <img class="plants" src="myFnont_Img/plants.jpg" height="50px" width="50px">
+    <div class="page_container">
+        <div class="header">Inter Code</div>
+        <img class="pic" src="myFnont_Img/guard.png" width="50px" height="50px">
+        <div class="p_container">
+            <p class="codeSent english">The verification code has been sent to your email</p>
+            <p class="codeSent german">Der Bestätigungscode wurde an Ihre E-Mail gesendet.</p>
+            <p class="codeSent arabic">تم إرسال رمز التحقق إلى بريدك الإلكتروني</p>
+            <p class="font email">*****@gmail.com</p>
+        </div>
+            <p class="font explaining english">The code consists of 6 digits containing letters and numbers and is valid for 10 minutes.</p>
+            <p class="font explaining german">Der Code besteht aus 6 Ziffern mit Buchstaben und Zahlen und ist 10 Minuten lang gültig.</p>
+            <p class="font explaining arabic">يتكون الرمز من 6 أرقام تحتوي على حروف وأرقام وصالح لمدة 10 دقائق</p>
+        <div class="grid">
+            <input type="number">
+            <input type="number">
+            <input type="number">
+            <input type="number">
+            <input type="number">
+            <input type="number">
+        </div>
+        <div>
+            <a class="font verify_btn english" href="index.html">verify</a>
+            <a class="font verify_btn german" href="index.html">Verifizieren</a>
+            <a class="font verify_btn arabic" href="index.html">تحقق</a>
+        </div>
+    </div>
+</body>
+<script src="javascript.js"></script>
+</html>

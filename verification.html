@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="verify.css">
+</head>
+<body>
+    <!-- this for the alert box -->
+    <div class="confirm-box">
+        <div class="message">Are you sure you want to change the language?</div>
+        <div class="buttons">
+            <button id="confirm-yes">Yes</button>
+            <button id="confirm-no">No</button>
+        </div>
+    </div>
+    <!-- the end -->
+    <!-- here's an upgrade -->
+  <div class="upgrade_dark_lang">
+    <a onclick="darkMode()"><img class="dark_mode" src="myFnont_Img/dark_mode.svg" alt="dark mode swithc" height="60px" width="60px"></a>
+    <div class="dropdown">
+      <button class="dropbtn">Language 🌐</button>
+      <div class="dropdown-content">
+        <button onclick="handleLanguageSwitch('english')">English</button>
+        <button onclick="handleLanguageSwitch('german')">German</button>
+        <button onclick="handleLanguageSwitch('arabic')">عربي</button>
+      </div>
+    </div>
+  </div>
+    <!-- upgrade end -->
+    <div class="logo">Logo</div>
+    <img class="plants go_left" src="myFnont_Img/plants.jpg">
+    <div class="page_container go_right">
+        <div class="header english">SIGN UP</div>
+        <div class="header german">REGISTRIEREN</div>
+        <div class="header arabic">التسجيل</div>
+        <img class="pic" src="myFnont_Img/profile.png">
+        <div class="grid">
+            <form class="form">
+                <div class="label_margin">
+                    <div>
+                        <label for="name" class="english">User Name</label>
+                        <label for="name" class="german">BENUTZERNAME</label>
+                        <label for="name" class="arabic">اسم المستخدم</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="phone" class="english">Phone Number</label>
+                        <label for="phone" class="german">TELEFONNUMMER</label>
+                        <label for="phone" class="arabic">رقم الهاتف</label>
+                        <input type="number" id="phone">
+                    </div>
+                </div>
+                <div class="label_margin">
+                    <div>
+                        <label for="email" class="english">Email</label>
+                        <label for="email" class="german">E-Mail</label>
+                        <label for="email" class="arabic">البريد الإلكتروني</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div>
+                        <label for="password" class="english">Password</label>
+                        <label for="password" class="german">Passwort</label>
+                        <label for="password" class="arabic">كلمة المرور</label>
+                        <input type="password" id="password">
+                    </div>
+                </div>
+                <div class="label_margin">
+                    <div>
+                        <label for="re_password" class="english">Re Password</label>
+                        <label for="re_password" class="german">Passwort erneut eingeben</label>
+                        <label for="re_password" class="arabic">إعادة إدخال كلمة المرور</label>
+                        <input type="password" id="re_password">
+                    </div>
+                    <div>
+                        <label for="certificate" class="english">Upload Certificate</label>
+                        <label for="certificate" class="german">Zertifikat hochladen</label>
+                        <label for="certificate" class="arabic">تحميل الشهادة</label>
+                        <input type="text" id="certificate">
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <a href="intery.html" class="signup_btn english">Sign Up</a>
+        <a href="intery.html" class="signup_btn german">Registrieren</a>
+        <a href="intery.html" class="signup_btn arabic">التسجيل</a>
+             <div class="bottom">
+                <a class="have_Account english" href="index.html">don't have an account?</a><a class="login english" href="index.html">login</a>
+                <a class="have_Account german" href="index.html">Bereits ein Konto?</a> <a class="login german" href="verification.html">Registrieren</a>
+                <a class="have_Account arabic" href="index.html">ليس لديك حساب؟</a> <a class="login arabic" href="verification.html">التسجيل</a>
+              </div>
+        </div>
+    </div>
+</body>
+<script src="javascript.js"></script>
+</html>

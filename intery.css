@@ -1,0 +1,323 @@
+h1,h2,h3,h4,h5,figure,p,ol,ul {
+  margin: 0;
+}
+ol,ul {
+  list-style: none;
+  padding-inline: 0;
+}
+h1,h2,h3,h4,h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* START READING FROM HERE TO THE END(UP IS JUST THE BASIC STYLING) */
+
+body {
+  background: linear-gradient(
+    108.81deg,
+    #7c8761 -21.51%,
+    #80af81 36.42%,
+    rgba(26, 83, 25, 0.9) 87.8%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: Pristina;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 71.81px;
+  text-align: left;
+  color: #ffffff;
+
+  left: 11vw;
+  top: 8vh;
+  line-height: 71.81px;
+}
+
+.header {
+  background: linear-gradient(180deg, #508d4e -14.81%, #161313 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.5vw;
+  top: 0;
+}
+
+.page_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 55vw;
+  max-width: 550px;
+
+  height: 55vh;
+  gap: 13px;
+
+  font-size: 1.2rem;
+
+  background: #ffffff42;
+  border: 1px solid #f1f1f17a;
+  border-radius: 40px;
+
+  margin: 100% 0;
+
+  box-shadow: -47.43px 47.43px 47.43px 0px #ffffff1a inset;
+  box-shadow: 47.43px -47.43px 47.43px 0px #c2c2c21a inset;
+
+  backdrop-filter: blur(25px);
+  transform: translate(40%);
+}
+
+.plants {
+  width: 360px;
+  height: 36vh;
+
+  max-height: 360px;
+
+  z-index: -1;
+  border-radius: 50px;
+  object-fit: cover;
+
+  position: absolute;
+  margin: 100% 0;
+
+  transform: translate(-40%);
+}
+
+.pic {
+  width: 11vh;
+  height: 11vh;
+}
+
+input {
+  box-sizing: border-box;
+  background-color: #d6efd8;
+  border: 1px transparent;
+  border-radius: 6px;
+  width: 4vh;
+  height: 4vh;
+}
+
+.verify_btn {
+  font-size: 1rem;
+  padding: 1vh 10vw;
+
+  color: #ffffff;
+  background: #7c8761ab;
+
+  border: 1px solid #f1f1f17a;
+  border-radius: 40px;
+
+  box-shadow: 47.43px -47.43px 47.43px 0px #c2c2c21a inset;
+
+  transition: 300ms;
+  transition-timing-function: ease-out;
+
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.font {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 0.8em;
+}
+
+.codeSent {
+  color: #1a5319;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1em;
+  text-align: center;
+}
+
+.email {
+  color: #d6efd8;
+  text-align: center;
+}
+
+.explaining {
+  text-align: center;
+  color: #ffffff;
+  width: 27vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.p_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+  }
+  .logo {
+    left: 5vw;
+    top: 2vh;
+    font-size: 6vw;
+  }
+  .page_container {
+    height: 60vh;
+    width: 80vw;
+    font-size: 1rem;
+    gap: 10px;
+    padding: 10px;
+    left: 10px;
+    transform: none;
+  }
+  .explaining {
+    width: 50vw;
+  }
+  .header{
+    font-size: 5vw;
+  }
+}
+
+/* Here the upgrade(languages, dark/light theme) */
+
+.dropbtn{
+  padding: 10px;
+  color: #ffffff;
+  background: #7c8761ab;
+
+  border: 1px solid #f1f1f17a;
+  border-radius: 40px;
+
+  box-shadow: 47.43px -47.43px 47.43px 0px #c2c2c21a inset;
+
+  transition: 300ms;
+  transition-timing-function: ease-out;
+}
+
+.dropdown {
+  display: flex;
+  align-self: flex-start;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  color: #ffffff;
+  background: #7c8761ab;
+
+  border: 1px solid #f1f1f17a;
+
+  box-shadow: 47.43px -47.43px 47.43px 0px #c2c2c21a inset;
+
+  transition: 300ms;
+  transition-timing-function: ease-out;
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  border: none;
+  background: none;
+  text-align: left;
+}
+
+.dropdown-content button:hover {
+  color: #ffffff;
+  background: #7c8761ab;
+
+  border: 1px solid #f1f1f17a;
+
+  box-shadow: 47.43px -47.43px 47.43px 0px #c2c2c21a inset;
+
+  transition: 300ms;
+  transition-timing-function: ease-out;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* both new btns positions and so */
+.upgrade_dark_lang{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  right: 11vw;
+  top: 8vh;
+}
+
+/* dark theam (next day) */
+
+
+.dark_theme{
+  background: linear-gradient(
+    108.81deg,
+    #3b3f30 -21.51%,
+    #405a40 36.42%,
+    rgba(13, 41, 12, 0.9) 87.8%
+);;
+}
+
+/* the alert box */
+.confirm-box {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  padding: 3vw;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: #405a40f5;
+  border: 1px solid #f1f1f17a;
+  border-radius: 15px;
+  box-shadow: 47.43px -47.43px 47.43px 0px #c2c2c21a inset;
+  transition: 300ms;
+  transition-timing-function: ease-out;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1rem;
+  
+}
+.confirm-box .message {
+  margin-bottom: 20px;
+}
+.confirm-box .buttons {
+  text-align: right;
+}
+.confirm-box .buttons button {
+  margin-left: 10px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.435);
+}
+/* alert box end */

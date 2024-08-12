@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+ 
+  <body>
+    <!-- this for the alert box -->
+    <div class="confirm-box">
+        <div class="message">Are you sure you want to change the language?</div>
+        <div class="buttons">
+            <button id="confirm-yes">Yes</button>
+            <button id="confirm-no">No</button>
+        </div>
+    </div>
+    <!-- the end -->
+    <!-- here's an upgrade -->
+  <div class="upgrade_dark_lang">
+    <a onclick="darkMode()"><img class="dark_mode" src="myFnont_Img/dark_mode.svg" alt="dark mode swithc" height="60px" width="60px"></a>
+    <div class="dropdown">
+      <button class="dropbtn">Language 🌐</button>
+      <div class="dropdown-content">
+        <button onclick="handleLanguageSwitch('english')">English</button>
+        <button onclick="handleLanguageSwitch('german')">German</button>
+        <button onclick="handleLanguageSwitch('arabic')">عربي</button>
+      </div>
+    </div>
+  </div>
+    <!-- upgrade end -->
+
+    <div class="logo">Logo</div>
+    <img class="plants go_right" id="plants" src="myFnont_Img/plants.jpg">
+        <div class="page_container go_left" id="page_container">
+          <div class="header english">LOGIN</div>
+          <div class="header german">Anmelden</div>
+          <div class="header arabic">تسجيل دخول</div>
+          <form id="form">
+              <div class="label_margin">
+                <label for="email" class="form_label english">Email</label>
+                <label for="email" class="form_label german">E-Mail</label>
+                <label for="email" class="form_label arabic">البريد الإلكتروني</label>
+                <input class="email" type="email" id="email">
+              </div>
+              <div class="label_margin">
+                <label for="phone" class="form_label english">Phone Number</label>
+                <label for="phone" class="form_label german">Telefonnummer</label>
+                <label for="phone" class="form_label arabic">رقم الهاتف</label>
+                <input class="phone" type="text" id="phone">
+              </div>
+              <div class="label_margin">
+                <label for="password" class="form_label english">Password</label>
+                <label for="password" class="form_label german">Passwort</label>
+                <label for="password" class="form_label arabic">كلمة المرور</label>
+                <input class="password" type="password" id="password">
+              </div>
+              <div>
+              </div>
+              <a href="#" class="login_btn english">Login</a>
+              <a href="#" class="login_btn german">Anmelden</a>
+              <a href="#" class="login_btn arabic">تسجيل الدخول</a>
+              <div class="bottom">
+                <a class="forget_noAccount english" href="#">Forget Password</a>
+                <a class="forget_noAccount german" href="#">Passwort vergessen</a>
+                <a class="forget_noAccount arabic" href="#">نسيت كلمة المرور</a>
+                <a class="forget_noAccount english" href="#">don't have an account?</a><a class="signup english" href="verification.html">signup</a>
+                <a class="forget_noAccount german" href="#">Bereits ein Konto?</a> <a class="signup german" href="verification.html">Registrieren</a>
+                <a class="forget_noAccount arabic" href="#">ليس لديك حساب؟</a> <a class="signup arabic" href="verification.html">التسجيل</a>
+              </div>
+          </form>
+        </div>
+  </body>
+
+  <script src="javascript.js"></script>
+</html>
+
+
+
+<!-- linear-gradient(
+    108.81deg,
+    #3b3f30 -21.51%,
+    #405a40 36.42%,
+    rgba(13, 41, 12, 0.9) 87.8%
+); -->
