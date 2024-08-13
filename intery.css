@@ -291,6 +291,7 @@ input {
 .confirm-box {
   display: none;
   position: fixed;
+  flex-direction: column;
   left: 50%;
   top: 50%;
   padding: 3vw;
